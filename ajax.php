@@ -12,7 +12,7 @@
 	//$call->pagination->next_max_id=$maxID;
 	//$call->pagination->next_url="https://api.instagram.com/v1/tags/{$tag}/media/recent?client_id={$clientID}&max_tag_id={$maxID}";
 	
-	$media = $instagram->getTagMedia('cola',$auth=false,array('max_tag_id'=>$maxID));
+	$media = $instagram->getTagMedia($tag,$auth=false,array('max_tag_id'=>$maxID));
 	
 	$images = array();
 	$dt = array();
